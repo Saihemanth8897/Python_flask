@@ -1,11 +1,1074 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Lab 02</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Hemanth Maremalla</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Mahmut Unan</h1>
-    <h2>Blazerid: Unan</h2>
+
+  <body id="top" class="lt-th">
+    <header class="header" data-header>
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="#">Sai Hemanth<span>.</span></a>
+        </h1>
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">Skills</a>
+            </li>
+            <li>
+              <a href="#customers" class="navbar-link">Experience</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#resume" class="navbar-link">Resume</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <section class="saih" id="home">
+          <figure class="sai-banner">
+            <picture>
+              <source
+                srcset="https://i.ibb.co/6ZTcRPj/sai.jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="https://i.ibb.co/6ZTcRPj/sai.jpg"
+                media="(min-width: 500px)"
+              />
+              <img
+                src="https://i.ibb.co/6ZTcRPj/sai.jpg"
+                alt="A man in a blue shirt with a happy expression"
+                class="w-100 mt-5"
+              />
+            </picture>
+          </figure>
+
+          <div class="saih-content">
+            <h2 class="h2 saih-title">Full Stack Web Developer</h2>
+
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+          </div>
+
+          <ul class="saih-social-list">
+            <li>
+              <a
+                href="https://github.com/Saihemanth8897"
+                target="_blank"
+                class="saih-social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+                <div class="tooltip">GitHub</div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sai-h-880815159"
+                target="_blank"
+                class="saih-social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="saih-social-link">
+                <img class="company_logo_css" src="./favicon.svg" />
+                <div class="tooltip">Portfolio.</div>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://mindbasesoftwaresolutions.com"
+                class="saih-social-link"
+              >
+                <img
+                  class="company_logo_css"
+                  src="https://i.ibb.co/FqtDT50/AAc-HTtc9-Wj-Z1-IYTDOm-Xfg-Va-IOy-EW7-ATnlf1-Y7kmoy-v-s576-c-no.png"
+                />
+                <div class="tooltip">
+                  Company.
+                  <small>(Mindbase Software Solutions Private Limited)</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <a href="#stats" class="scroll-down">Scroll</a>
+        </section>
+
+        <section class="stats" id="stats">
+          <ul class="stats-list">
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-1.png"
+                    alt="Badge icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  5+ <strong>Years of Experience</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-2.png"
+                    alt="Checkmark icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  10+ <strong>Completed Projects</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#customers" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-3.png"
+                    alt="Peoples rating icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  7+ <strong>Happy Customers</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </section>
+        \
+        <section class="about" id="about">
+          <figure class="about-banner">
+            <img
+              src="https://i.ibb.co/7pZCzRx/thoughtful-young-business-man-thinking-looking-up-question-mark-thought-bubble-human-emotion-facial.jpg"
+              alt="A man in a alice blue shirt with a thinking expression"
+              class="w-100"
+            />
+          </figure>
+
+          <div class="about-content section-content">
+            <p class="section-subtitle">About me</p>
+
+            <h2 class="h3 section-title">
+              Collaborate with me to bring your creative product to life!
+            </h2>
+
+            <p class="section-text">
+              Hi! I’m Sai Hemanth, and I’m a Senior Full stack web developer who
+              has passion for building clean web applications with intuitive
+              functionalities. I enjoy the process of turning ideas into reality
+              using creative solutions. I’m always curious about learning new
+              skills, tools, and concepts. In addition to working on various
+              solo full stack projects, I have worked with creative teams, which
+              involves daily stand-ups and communications, source control, Agile
+              and project management.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="remove-acss">
+                <button class="btn btn-secondary">Hire me</button></a
+              >
+              <a
+                href="./Sai Hemanth - CV - latest.pdf"
+                target="_blank"
+                class="remove-acss"
+                download
+              >
+                <button class="btn btn-primary">Download cv</button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills" id="skills">
+          <div class="skills-content section-content">
+            <p class="section-subtitle">My skills</p>
+
+            <h2 class="h3 section-title">
+              What My Programming Skills Included?
+            </h2>
+
+            <p class="section-text">
+              I develop simple, intuitive and responsive user interface that
+              helps users get things done with less effort and time with those
+              technologies.
+            </p>
+
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
+            </div>
+          </div>
+
+          <div class="skills-box" data-skills-box>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">HTML5</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/html5.png" alt="HTML5 logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">CSS3</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/css3.png" alt="CSS3 logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">JavaScript</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/javascript.png"
+                      alt="JavaScript logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">TypeScript</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/typescript.png"
+                      alt="TypeScript logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Nest js</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="20"
+                      src="https://i.ibb.co/G7hxZmb/ezgif-5-e74ca8fed2.jpg"
+                      alt="NestJs Logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Bootstrap</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/bootstrap.png"
+                      alt="Bootstrap logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Angular</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/angular.png" alt="Angular logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">React</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/react.png" alt="React logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Firebase</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/firebase.png"
+                      alt="Firebase logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Ionic 7</div>
+
+                  <div class="card-icon">
+                    <ion-icon size="large" name="logo-ionic"></ion-icon>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">SASS</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/sass.png" alt="SASS logo" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="tools-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Ajax</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/ajax.png" alt="Ajax logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Gulp</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/gulp.png" alt="Gulp logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Webpack</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/webpack.png" alt="Webpack logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Git</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/git.png" alt="Git logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Npm</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/npm.png" alt="Npm logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Command Line</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/command.png"
+                      alt="Command Line logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Storybook</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="30"
+                      src="https://i.ibb.co/fQr18fg/storybook-icon-icon-412x512-341bo8r1.png"
+                      alt="Storybook logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Verdaccio</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="30"
+                      src="https://i.ibb.co/Z6kNv9L/ezgif-3-44d3fa6e47.png"
+                      alt="Verdaccio logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">VS Code</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/vs-code.png" alt="VS Code logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Trello</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/trello.png" alt="Trello logo" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="exp" id="customers">
+          <div class="exp-content section-content">
+            <p class="section-subtitle">Work Experience</p>
+
+            <h2 class="h3 section-title">
+              What are the Companies which I worked with ?
+            </h2>
+          </div>
+
+          <div class="exp-box">
+            <ul class="exp-list">
+              <li>
+                <div class="company-card">
+                  <div class="tooltip">Chintakindi technologies</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="https://i.ibb.co/Q6HMkk7/ezgif-1-8b06acbfeb.png"
+                      alt="Right ERP logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="company-card">
+                  <div class="tooltip">Einfochips</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="180"
+                      src="https://cdn.einfochips.com/wp-content/uploads/2019/11/18123427/eic-arrow-logo-dark-1.png"
+                      alt="Einfochips logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="company-card">
+                  <div class="tooltip">ThoughtWorks</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="150"
+                      src="https://i.ibb.co/QK79jPV/ezgif-1-b2395cc8bb.png"
+                      alt="Thoughtworks logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="company-card">
+                  <div class="tooltip">Chekk</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="100"
+                      src="https://www.chekk.me/storage/2023/01/Chekk-New-Logo-Blue.png"
+                      alt="Chekk logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="company-card">
+                  <div class="tooltip">Wistron ITS</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="90"
+                      src="https://i.ibb.co/NnNrBhn/ezgif-1-deee36821c.png"
+                      alt="Wistron ITS Logo"
+                    />
+                  </div>
+                </div>
+                <br />
+              </li>
+              <li>
+                <div class="company-card">
+                  <div class="tooltip">Dedalus Health</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="150"
+                      src="https://i.ibb.co/my0NwcZ/ezgif-2-eded7747c3.png"
+                      alt="Dedalus Health logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="company-card">
+                  <div class="tooltip">UAB Health Professions</div>
+
+                  <div class="card-icon">
+                    <img
+                      width="150"
+                      src="data:image/png;base64,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"
+                      alt="UAB Health professions logo"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project" id="portfolio">
+          <ul class="project-list">
+            <li>
+              <div class="project-content section-content">
+                <p class="section-subtitle">My Works</p>
+
+                <h2 class="h3 section-title">
+                  See My Works Which Will Impress You!
+                </h2>
+
+                <p class="section-text">
+                  We develop the best quality website that serves for the
+                  long-term. Well-documented, clean, easy and elegant interface
+                  helps any non-technical clients.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                href="https://jewels.righterpsoftware.com/#/auth/signin"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="https://i.ibb.co/7jcbpDZ/Screenshot-2023-06-17-at-12-15-21-AM.png"
+                    class="w-100"
+                    alt="Right ERP"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h4 class="h4 card-title">
+                    Right ERP <small>[Chintakindi Technologies]</small>
+                  </h4>
+
+                  <time class="publish-date" datetime="2018-11"
+                    >Nov 2018 - Jun 2019</time
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://hydro-digital-dev-webapp.azurewebsites.net"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="https://i.ibb.co/gvn6D26/Screenshot-2023-06-17-at-12-13-00-AM.png"
+                    class="w-100"
+                    alt="Hydro Dover Cloud Portal"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h4 class="h4 card-title">
+                    Hydro Dover <small>[Einfochips]</small>
+                  </h4>
+
+                  <time class="publish-date" datetime="2019-06"
+                    >Jun-2019 - Dec 2021</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.sc.com/hk/#"
+                target="_blank"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="https://i.ibb.co/DCWWkxd/Screenshot-2023-06-17-at-12-24-23-AM.png"
+                    class="w-100"
+                    alt="Standard Charted bank - HK"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h4 class="h4 card-title">
+                    Standard Charted bank - HK <small>[ThoughtWorks]</small>
+                  </h4>
+
+                  <time class="publish-date" datetime="2022-01"
+                    >Jan 2022 - July 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.chekk.me/"
+                target="_blank"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="https://i.ibb.co/NpKzbBb/chekk.png"
+                    class="w-100"
+                    alt="Chekk.me"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Chekk.me (web)</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >Feb 2022 - Dec 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.chekk.me/"
+                target="_blank"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="https://i.ibb.co/MfR6WY9/Screenshot-2023-06-17-at-12-59-36-AM.png"
+                    class="w-100"
+                    alt="Chekk-portal"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Chekk Portal</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >Mar 2022 - Jan 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.onpointtech.com/"
+                target="_blank"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="https://i.ibb.co/VWFz6QL/Screenshot-2023-06-17-at-1-01-13-AM.png"
+                    class="w-100"
+                    alt="On Point Technologies LLC"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    On Point Technologies LLC [ Wistron America ]
+                  </h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >April 2021 - Dec 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                href="https://mindbasesoftwaresolutions.com/"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="https://i.ibb.co/7vxqRC9/Screenshot-2023-06-17-at-1-04-01-AM.png"
+                    class="w-100"
+                    alt="Mindbase Software Solutions Private Limited"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    Mindbase Software Solutions Private Limited
+                  </h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >Sep 2022 - Jan 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.dedalus.com/global/en/life-flows-through-our-software/integrate-records-and-improve-patient-safety/"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="https://i.ibb.co/PYQMd1W/Screenshot-2023-06-17-at-1-06-22-AM.png"
+                    class="w-100"
+                    alt="Dedalus Health Care"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Dedalus Healthcare</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >Aug 2022 - Dec 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="" id="resume">
+          <li>
+            <div class="project-content section-content">
+              <p class="section-subtitle">My Resume</p>
+
+              <h2 class="h3 section-title">My Resume</h2>
+
+              <!-- <p class="section-text">
+                  We develop the best quality website that serves for the
+                  long-term. Well-documented, clean, easy and elegant interface
+                  helps any non-technical clients.
+                </p> -->
+            </div>
+          </li>
+          <iframe
+            class="sai_resume ml-5"
+            src="./Sai Hemanth - CV - latest.pdf"
+          ></iframe>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="contact-content section-content">
+            <p class="section-subtitle">Contact</p>
+
+            <h2 class="h3 section-title">
+              Are you Impressed with my skills? Please Drop a Message
+            </h2>
+
+            <p class="section-text">
+              Get in touch and let me know how i can Help you. Fill out the form
+              and i’ll be in touch as soon as possible.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Address:</h3>
+
+                  <address class="contact-info">
+                    1322, 15th Ave S, Birmingham, Alabama, 35205, United States.
+                  </address>
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Phone:</h3>
+
+                  <a href="tel:+12059607810" class="contact-info"
+                    >(+1) 205 960 7810</a
+                  >
+
+                  <a href="tel:+918185820115" class="contact-info"
+                    >(+91) 818 582 0115</a
+                  >
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+
+                  <a
+                    href="mailto:maremallasaihemanth@gmail.com"
+                    class="contact-info"
+                    >maremallasaihemanth@gmail.com</a
+                  >
+
+                  <a href="mailto:smaremal@uab.edu" class="contact-info"
+                    >smaremal@uab.edu</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <ul class="contac-social-list">
+                  <li>
+                    <a
+                      href="https://github.com/Saihemanth8897"
+                      target="_blank"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">GitHub</div>
+
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/sai-h-880815159"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">Linkedin</div>
+
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="contact-social-link">
+                      <div class="tooltip">Portfolio</div>
+                      <img src="./favicon.svg" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://mindbasesoftwaresolutions.com"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">
+                        Company.
+                        <small
+                          >(Mindbase Software Solutions Private Limited)</small
+                        >
+                      </div>
+                      <img
+                        src="https://i.ibb.co/FqtDT50/AAc-HTtc9-Wj-Z1-IYTDOm-Xfg-Va-IOy-EW7-ATnlf1-Y7kmoy-v-s576-c-no.png"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <form action="" class="contact-form" id="sai_contact_form">
+            <div class="form-control">
+              <label for="name" class="form-label">Name</label>
+
+              <div class="input-form">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="e.g John Doe"
+                  class="input-field"
+                />
+
+                <ion-icon name="person-circle"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label for="email" class="form-label">Email</label>
+
+              <div class="input-form">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="e.g johndoe@mail.com"
+                  class="input-field"
+                />
+
+                <ion-icon name="mail"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label for="phone" class="form-label">Phone</label>
+
+              <div class="input-form">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="e.g +1 0123456789"
+                  class="input-field"
+                />
+
+                <ion-icon name="call"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label for="message" class="form-label">Message</label>
+
+              <div class="input-form">
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  placeholder="Write message..."
+                  class="input-field"
+                ></textarea>
+
+                <ion-icon name="chatbubbles"></ion-icon>
+              </div>
+            </div>
+
+            <button type="submit" onclick="mailSent()" class="btn btn-primary">
+              Send
+            </button>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="h1 logo">
+          <a href="#"> Sai Hemanth Maremalla<span>.</span> </a>
+        </p>
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">saihemanthmaremalla</a>. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <a href="#top" class="go-to-start" data-go-to-start title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

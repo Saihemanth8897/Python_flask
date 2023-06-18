@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise2</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      .movieNames td,
+      .years td {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+      }
+      .links td {
+        text-align: center;
+      }
+      .links img {
+        height: 62px;
+      }
+      .movie-images td img {
+        width: 152px;
+        height: 170px;
+      }
+      .text-danger {
+        color: #dc3545 !important;
+      }
+      .bg-danger {
+        background-color: #dc3545 !important;
+      }
+      .text-white {
+        color: #fff !important;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr class="movieNames">
+        <td>The Lord of the Rings</td>
+        <td>Matrix</td>
+        <td>The Godfather</td>
+      </tr>
+      <tr class="movie-images">
+        <td>
+          <img
+            src="https://i.ibb.co/WBvsKXK/the-lord-of-rings-image.jpg"
+            alt="The Lord of Rings movie"
+          />
+        </td>
+        <td>
+          <img
+            src="https://i.ibb.co/LZ7HW96/matrix-image.jpg"
+            alt="Matrix movie"
+          />
+        </td>
+        <td>
+          <img
+            src="https://i.ibb.co/k08JxsZ/The-godfather-image.jpg"
+            alt="The
+          Godfather Movie"
+          />
+        </td>
+      </tr>
+      <tr class="years">
+        <td>2001</td>
+        <td class="text-danger">1999</td>
+        <td class="bg-danger text-white">1972</td>
+      </tr>
+      <tr class="links">
+        <td>
+          <a href="https://www.imdb.com/title/tt0120737" target="_blank"
+            >Imdb link</a
+          >
+        </td>
+        <td>
+          <a href="https://www.imdb.com/title/tt0133093" target="_blank"
+            >Imdb link</a
+          >
+        </td>
+        <td>
+          <a href="https://www.imdb.com/title/tt0068646" target="_blank"
+            ><img
+              src="data:image/jpeg;base64,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"
+              alt="The Godfather"
+          /></a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
