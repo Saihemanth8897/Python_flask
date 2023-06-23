@@ -1,0 +1,31 @@
+td{
+    text-align: center;
+    cursor: pointer;
+    vertical-align: inherit !important;
+}
+td:hover{
+    background-color: #762b2bc7;
+    color: white;
+}
+.calc{
+    box-shadow: 2px 3px 15px 9px #0000003d;
+    background-color: beige !important;
+    
+}
+.w-98{
+    width: 98% !important;
+}
+.rotate-sign {
+    transform: rotate(45deg);
+}
+
+body{ 
+    background-color: #7e7e46 !important;
+}
+input, h2 {
+    color: #762b2bc7;
+}
+input{
+    font-weight: bolder;
+    font-size: 24px;;
+}
