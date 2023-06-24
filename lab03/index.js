@@ -23,9 +23,10 @@ const keyCodeMap = {
   "*": "*",
 };
 const resultsKeys = {
-  Enter: "enter",
+  "Enter": "enter",
   "=": "enter",
-  Backspace: "clear",
+  "Backspace": "clear",
+  'Escape':'escape'
 };
 const splActionOperators = {
   r: "sqrt",
@@ -129,6 +130,7 @@ function actionOperator(type) {
 }
 
 document.onkeydown = function (event) {
+  console.log(event)
   if (event.keyCode == 38 || event.keyCode == 40) {
     showHistory(event.keyCode);
   }
@@ -136,12 +138,17 @@ document.onkeydown = function (event) {
   if (keyCodeMap[key]) {
     eventdata(keyCodeMap[key]);
   } else if (resultsKeys[key]) {
-    resultsKeys[key] == "clear" ? reset() : result();
+    resultsKeys[key] == "Escape" ? reset() : (resultsKeys[key] == 'clear'? clearingData() : result());
   } else if (splActionOperators[key]) {
     actionOperator(splActionOperators[key]);
   }
 };
-
+function clearingData(){
+  if(textdata){
+textdata = textdata.slice(0, -1)
+  inputField.value = textdata
+  }
+}
 function showHistory(num) {
   if (num == 38) {
     if (currentIndex > 0) {

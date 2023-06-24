@@ -32,7 +32,7 @@
   <body>
     <article class="mt-5">
       <section class="">
-        <div class="col-md-6 offset-3 p-0 calc">
+        <div class="col-md-6 offset-md-3 p-0 calc">
           <div class="text-center">
             <h2>Calculator</h2>
           </div>
@@ -80,22 +80,24 @@
                 </tr>
 
                 <tr>
-                  <td onclick="actionOperator('sqrt')">&radic;</td>
+                  <td onclick="actionOperator('sqrt')">&radic; </br><span class="f-8">press (r)</span></td>
                   <td onclick="eventdata('^')">^</td>
                   <td onclick="eventdata('%')">%</td>
                 </tr>
                 <tr>
-                  <td onclick="eventdata('sin')">sin</td>
-                  <td onclick="eventdata('cos')">cos</td>
-                  <td onclick="eventdata('tan')">tan</td>
+                  <td onclick="eventdata('sin')">sin</br><span class="f-8">press (s)</span></td>
+                  <td onclick="eventdata('cos')">cos </br><span class="f-8">press (c)</span></td>
+                  <td onclick="eventdata('tan')">tan </br><span class="f-8">press (t)</span></td>
                 </tr>
                 <tr>
                   <td onclick="actionOperator(`openBrace`)">(</td>
                   <td onclick="actionOperator('closeBrace')">)</td>
-                  <td onclick="result()">=</td>
+                  <td onclick="result()">= 
+                  <!-- </br><span class="f-8">(Enter)</span> -->
+                </td>
                 </tr>
                 <tr>
-                  <td onclick="reset()">Clear</td>
+                  <td onclick="reset()">Clear </br><span class="f-8">press (ESC)</span></td>
                   <td onclick="result()" colspan="2">Enter</td>
                 </tr>
               </table>
