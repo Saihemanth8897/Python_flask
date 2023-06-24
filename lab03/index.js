@@ -26,7 +26,7 @@ const resultsKeys = {
   "Enter": "enter",
   "=": "enter",
   "Backspace": "clear",
-  'Escape':'escape'
+  'Escape':'Escape'
 };
 const splActionOperators = {
   r: "sqrt",
