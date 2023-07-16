@@ -35,7 +35,7 @@ def report():
 
     username = request.form.get('username')
     password = request.form.get('password')
-    message, isSuccess, isValid = check_password_format(password)
+    message, isSuccess, isValid = CheckPasswordValidator(password)
     if isValid:
         conn = get_db_connection()
         cursor = conn.cursor()
@@ -55,7 +55,7 @@ def report():
         return render_template('report.html', username=username, password=password, valid=message, success=isSuccess, isUserExists=isValid)
 
 
-def check_password_format(password, isSuccess=''):
+def CheckPasswordValidator(password, isSuccess=''):
     isValid = False
     message = ""
     if len(password) < 8:

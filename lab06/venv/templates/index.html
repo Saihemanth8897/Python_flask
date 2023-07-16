@@ -55,16 +55,16 @@
         } / 3 attempts left, Please wait for Enable the submit Form button to Try again! (Hint: It take 30Sec to enable)`;
         setTimeout(() => {
           localStorage.clear();
-          document.getElementById(
-            "warningMsg"
-          ).innerHTML = `You have 3  / 3 attempts left`;
+          document.getElementById("warningMsg").innerHTML = null;
           document.getElementById("subbtn").disabled = false;
         }, 30000);
       } else {
         let doc = document.getElementById("warningMsg");
-        doc.innerHTML = `You have ${
-          3 - (fetchCount ? Number(fetchCount) : 0)
-        } / 3 attempts left!`;
+        if (fetchCount && Number(fetchCount) > 0) {
+          doc.innerHTML = `You have ${
+            3 - (fetchCount ? Number(fetchCount) : 0)
+          } / 3 attempts left!`;
+        }
       }
     }
 
