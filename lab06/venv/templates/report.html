@@ -17,10 +17,10 @@
   <body>
     {% extends "base.html" %} {% block content %}
     <div class="cong w-100 text-center">
-      <h2 class="text-center">Password Format Report</h2>
+      <h2 class="text-center">Let's see if Password meets the requirements</h2>
       <p class="text-center" >Username: {{ username }}</p>
       <p class="text-center">Password: {{ password }}</p>
-     <p class="text-center">{% if isUserExists == None %} Success !  {{valid | safe}} {% else %} <h6 clas="text-center" id="att">Here is the Requirements you failed ! </h6>  {{valid | safe}} {% endif %}</p>
+     <p class="text-center">{% if isUserExists == None %} <span class="text-success">Congratulations !</span>  {{valid | safe}} {% else %} <h6 clas="text-center" id="att"><span>Oh No! Here is the some issues with Password </span></br>Here is the Requirements you failed ! </h6>  {{valid | safe}} {% endif %}</p>
         
         <div class="d-flex">
               {% if isUserExists == None%}  <button class="btn btn-success m-auto" onclick="goBack()">Create New One</button>{% else %} <button class="btn btn-danger m-auto" onclick="goBack()"  >Retry</button> {% endif %}
@@ -33,7 +33,6 @@
      let errors = document.getElementById("att")
      if(errors){
         let fetchCount = localStorage.getItem('attepts')
-        console.log(fetchCount)
         if(fetchCount){
           localStorage.setItem('attepts', Number(fetchCount)+1)
         }else{

@@ -4,8 +4,6 @@ import sqlite3
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-# Database (optional)
-
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
@@ -27,9 +25,6 @@ def create_tables():
     conn.close()
 
 
-users = []
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -41,21 +36,15 @@ def report():
     username = request.form.get('username')
     password = request.form.get('password')
     message, isSuccess, isValid = check_password_format(password)
-    print(username, password, message)
-
     if isValid:
         conn = get_db_connection()
         cursor = conn.cursor()
-
-        # Check if the username already exists
         cursor.execute('SELECT * FROM users WHERE username = ?', (username,))
         user = cursor.fetchone()
-        print(user, username)
         if user:
             message = '<p clas="text-center text-danger" style="color: red;">Username already exists. Please choose a different username.</p>'
             return render_template('report.html', username=username, password=password, valid=message, success=isSuccess, isUserExists=user)
 
-            # Insert the new user into the database
         cursor.execute(
             'INSERT INTO users (username, password) VALUES (?, ?)', (username, password))
         conn.commit()
@@ -63,7 +52,6 @@ def report():
 
         return render_template('report.html', username=username, password=password, valid=message, success=isSuccess, isUserExists=None)
     else:
-        users.append({'username': username, 'password': password})
         return render_template('report.html', username=username, password=password, valid=message, success=isSuccess, isUserExists=isValid)
 
 

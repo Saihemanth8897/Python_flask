@@ -46,17 +46,14 @@
     function reloadScript() {
       let fetchCount = localStorage.getItem("attepts");
       if (fetchCount > 3) localStorage.clear();
-      console.log("dddd", fetchCount);
       fetchCount = Number(fetchCount) > 3 ? 0 : fetchCount;
 
       if (fetchCount && fetchCount == 3) {
-        console.log(fetchCount);
         document.getElementById("subbtn").disabled = true;
         document.getElementById("warningMsg").innerHTML = `You have ${
           3 - Number(fetchCount)
         } / 3 attempts left, Please wait for Enable the submit Form button to Try again! (Hint: It take 30Sec to enable)`;
         setTimeout(() => {
-          console.log("sai");
           localStorage.clear();
           document.getElementById(
             "warningMsg"
@@ -65,7 +62,6 @@
         }, 30000);
       } else {
         let doc = document.getElementById("warningMsg");
-        console.log(doc);
         doc.innerHTML = `You have ${
           3 - (fetchCount ? Number(fetchCount) : 0)
         } / 3 attempts left!`;
