@@ -1,0 +1,84 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <h2>Welcome to Password Checker</h2>
+    <p>Let's see if user Password is Secure !</p>
+    <h6 id="warningMsg" class="text-warning"></h6>
+    <div class="mx-5">
+      It must contain a lowercase letter. <br />
+      It must contain an uppercase letter <br />
+      It must end in a number <br />
+      password should be at least 8 characters
+    </div>
+    <form method="POST" action="/report">
+      <div class="form-group mt-3">
+        <label for="username">Username<span class="text-danger">*</span></label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          name="username"
+          placeholder="User Name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="password"
+          >Password <span class="text-danger">*</span></label
+        >
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="password"
+          name="password"
+          required
+        />
+      </div>
+      <div class="d-flex">
+        <button id="subbtn" type="submit" class="btn btn-primary ml-auto">
+          Submit Form
+        </button>
+      </div>
+    </form>
+  </div>
+  <script>
+    function reloadScript() {
+      let fetchCount = localStorage.getItem("attepts");
+      if (fetchCount > 3) localStorage.clear();
+      console.log("dddd", fetchCount);
+      fetchCount = Number(fetchCount) > 3 ? 0 : fetchCount;
+
+      if (fetchCount && fetchCount == 3) {
+        console.log(fetchCount);
+        document.getElementById("subbtn").disabled = true;
+        document.getElementById("warningMsg").innerHTML = `You have ${
+          3 - Number(fetchCount)
+        } / 3 attempts left, Please wait for Enable the submit Form button to Try again! (Hint: It take 30Sec to enable)`;
+        setTimeout(() => {
+          console.log("sai");
+          localStorage.clear();
+          document.getElementById(
+            "warningMsg"
+          ).innerHTML = `You have 3  / 3 attempts left`;
+          document.getElementById("subbtn").disabled = false;
+        }, 30000);
+      } else {
+        let doc = document.getElementById("warningMsg");
+        console.log(doc);
+        doc.innerHTML = `You have ${
+          3 - (fetchCount ? Number(fetchCount) : 0)
+        } / 3 attempts left!`;
+      }
+    }
+
+    window.onload = reloadScript();
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted) {
+        reloadScript();
+      }
+    });
+  </script>
+</div>
+
+{% endblock %}
